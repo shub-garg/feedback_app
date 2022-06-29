@@ -1,0 +1,70 @@
+.navbar {
+    position: relative;
+    background-color: rgb(14, 111, 99);
+    height:39px;  
+}
+
+.brand {
+    position: absolute;
+    left: 45%;
+    display: block;
+}
+
+
+body {
+    background-image: url("../imgs/bg.png");
+    /* background-color: #cccccc; */
+    background-attachment: fixed; 
+    background-position:bottom;
+    background-repeat:repeat-x;  
+    max-width: 100%;
+}
+
+.buttonHolder {
+    text-align: center;
+}
+
+
+label {
+    cursor: pointer;
+    filter: grayscale(60%);
+    width: auto;
+    height: auto;
+  }
+  
+  label:hover {
+    filter: grayscale(0);
+  }
+  input[type="radio"]:checked + label {
+    filter: grayscale(0);
+  }
+
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+button{
+    background-color:rgb(14, 111, 99);
+}
+
+@media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    div.example {
+      font-size: 30px;
+    }
+  }
+
+  hr.mine {
+    border: none;
+    height: 8px;
+    color: rgb(255, 0, 0); /* old IE */
+    background-color: rgb(246, 167, 18); /* Modern Browsers */
+    opacity: 100;
+}

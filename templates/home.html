@@ -1,0 +1,20 @@
+{%extends 'base.html'%} <script>$(".btn-group button").removeClass("active"); </script> {%block body%} <h3 style="text-align: center; 
+font-size: clamp(20px, 2vw, 50px);">Your feedback is valuable to us.</h3>
+    <h3 style="text-align: center; font-size: clamp(20px, 2vw, 50px);">Kindly rate your check-in experience.</h3> <form action="/" 
+class="form" method="POST">
+  <div class="container"> <div class="row align-items-start"> <div class="col"> <input type="radio" name="satisfaction" class="sr-only" 
+      id="happy" value="happy">
+  <label for="happy"> <img src="../static/imgs/green.png" alt="happy" class="img-fluid" alt="Responsive image" style="max-width:75%;"> 
+  </label> </div> <div class="col"> <input type="radio" name="satisfaction" class="sr-only" id="neutral" value="neutral"> <label 
+  for="neutral">
+    <img src="../static/imgs/yellow.png" alt="neutral" class="img-fluid" alt="Responsive image" style="max-width:75%"> </label> </div> <div 
+  class="col"> <input type="radio" name="satisfaction" class="sr-only" id="sad" value="sad"> <label for="sad">
+    <img src="../static/imgs/red.png" alt="sad" class="img-fluid" alt="Responsive image" style="max-width:75%;"> </label> </div> </div> <div 
+    class="form-group">
+        <label for="suggestions">
+            
+        </label> <h3 style="text-align: center; font-size: clamp(20px, 2vw, 50px)">Feedback or suggestions</h3> <textarea class="form-control" 
+        id="suggestions" name="suggestions" rows="2"></textarea> <div class = "buttonHolder">
+          <br> <button type="submit" class="btn btn-success" style = "background-color: rgb(14,111,99);"> <img src="../static/imgs/submit.png" 
+              height="25" width="30">
+          </button> </div> </div> </form> {%endblock body%}
